@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+img {
+  object-fit: cover;
+}
+
+nav {
+  height: 15vh;
+}
+
+.espIng {
+  font-size: 1.2em;
+  margin-left: 1.5em;
+}
+
+.navegacion {
+  font-size: 1.2em;
+  margin-right: 1.5em;
+}
+
+button {
+  background-color: #f2f2f2;
+  padding: 0.5em 1em;
+  border-color: #897fe2;
+  border-width: 0.3em;
+}
+
+button:hover {
+  border-style: dashed;
+}
+
+.primerosDatos {
+  text-align: center;
+}
+
+.primerosDatos img {
+  width: 20%;
+}
+
+.corchetes {
+  display: inline;
+  margin: auto 0.2em;
+  padding-top: 0%;
+  font-size: 1.3em;
+  color: #897fe2;
+}
+
+.sobreMi {
+  font-size: 1.5em;
+  background-color: #897fe2;
+  color: #f2f2f2;
+  padding: 4em 7em;
+  margin: -3em auto;
+}
+
+.portada {
+  width: 50%;
+  margin: 1.5em auto;
+}
+
+.descripcion {
+  margin: 2em 7em;
+  font-size: 1.1em;
+}
+
+.verPag {
+  width: 12em;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #897fe2;
+  height: 6em;
+  font-size: 1.2em;
+}
