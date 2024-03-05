@@ -15,6 +15,7 @@ img {
 
 nav {
   height: 15vh;
+  font-size: 1.5em;
 }
 
 .espIng {
@@ -81,4 +82,76 @@ footer {
   background-color: #897fe2;
   height: 6em;
   font-size: 1.2em;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 1400px) {
+  nav {
+    height: 10vh;
+    font-size: 1em;
+  }
+
+  .florcitasArriba {
+    width: 60%;
+    padding-bottom: 3em;
+  }
+
+  .sobreMi {
+    font-size: 1em;
+    padding: 3em 6em;
+  }
+
+  .florcitasAbajo {
+    width: 60%;
+    padding-top: 3em;
+  }
+
+  .divisor {
+    width: 70%;
+    padding: 2em 0;
+  }
+}
+
+/* RESPONSIVE CELU */
+@media (max-width: 1000px) {
+  nav {
+    height: 10vh;
+    font-size: 0.8em;
+  }
+
+  .tituloUno {
+    font-size: 2em;
+  }
+
+  .tituloDos {
+    font-size: 1.8em;
+  }
+
+  .primerosDatos {
+    font-size: 0.6em;
+  }
+
+  .sobreMi {
+    font-size: 0.8em;
+    padding: 3em 6em;
+  }
+
+  .habilidades {
+    padding: 0 5em;
+  }
+
+  .portada {
+    width: 80%;
+    margin: 1.5em auto;
+  }
+
+  .descripcion {
+    margin: 1em 2em;
+    font-size: 1.1em;
+  }
+
+  .verPag {
+    width: 9em;
+    font-size: 0.8em;
+  }
 }
