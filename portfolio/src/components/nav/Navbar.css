@@ -1,0 +1,20 @@
+nav {
+  background-color: rgba(251, 255, 241, 0.2);
+  padding: 0.5em 1em;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 3em;
+}
+
+.logo {
+  max-height: 8vh;
+}

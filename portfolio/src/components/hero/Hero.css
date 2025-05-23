@@ -1,0 +1,21 @@
+#hero {
+  height: 92vh;
+  color: var(--blanquito);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.perroRobot {
+  max-height: 650px;
+  height: 90%;
+}
+h1 {
+  font-size: 5em;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-top: 2rem;
+}
