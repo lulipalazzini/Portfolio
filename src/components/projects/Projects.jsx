@@ -12,14 +12,16 @@ const Projects = () => {
       <div>
         <h3 className="cardName">{project.projectName}</h3>
         <p className="cardDesc">{project.projectDescription}</p>
-        <a
-          href={project.projectLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cardLink"
-        >
-          Ver proyecto
-        </a>
+        <div className="cardLinkWrapper">
+          <a
+            href={project.projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cardLink"
+          >
+            Ver proyecto <i className="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   ));

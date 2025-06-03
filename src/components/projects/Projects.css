@@ -1,11 +1,13 @@
-.card {
+.projectContainer {
   display: flex;
-  align-items: center;
-  gap: 2em;
+}
+
+.card {
+  width: 30%;
 
   background-color: var(--violeta-claro);
   border-radius: 1rem;
-  padding: 1.5rem 3rem;
+  padding: 1rem;
   margin: 1.5em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -22,10 +24,32 @@
 }
 .title {
   color: var(--blanquito);
-  font-size: 50px;
+  font-size: 2.5em;
+  font-weight: 100;
   margin: auto 0.5em;
 }
 .cardName {
   color: var(--violeta-negro);
-  font-size: 30px;
+  font-family: "DM Serif Text", serif;
+  font-weight: 100;
+  font-size: 2em;
+  margin-block: 0.6em;
+}
+.cardDesc {
+  margin-block: 1.6em;
+}
+.cardLinkWrapper {
+  display: flex;
+  align-items: center;
+}
+.cardLink {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--violeta-medio);
+  color: var(--blanquito);
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  cursor: pointer;
 }

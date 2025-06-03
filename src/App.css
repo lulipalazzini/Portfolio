@@ -1,11 +1,5 @@
 body {
-  /* background-color: var(--violeta-negro); */
-  background-image: linear-gradient(
-    to bottom,
-    var(--violeta-negro),
-    var(--violeta-oscuro),
-    var(--violeta-medio)
-  );
+  background-color: var(--violeta-negro);
   min-height: 100vh;
   margin: 0;
 }

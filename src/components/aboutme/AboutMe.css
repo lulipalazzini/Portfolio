@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+  padding: 2rem;
+  color: var(--blanquito);
+}
+
+section {
+  background-color: var(--violeta-medio);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-family: sans-serif;
+}
+
+.sobre-mi {
+  grid-row: 1 / 3;
+}
+
+.herramientas {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificaciones {
+  margin-top: 1rem;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.tool-grid li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icono {
+  width: 20px;
+  height: 20px;
+  background-color: var(--blanquito);
+  border-radius: 2px;
+}

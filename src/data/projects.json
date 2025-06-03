@@ -2,15 +2,22 @@
   {
     "id": 1,
     "projectName": "Proyecto 1",
-    "projectDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla reiciendis suscipit consequatur, dolorum qui error quas facilis incidunt ratione aliquid velit repudiandae dolores non ullam temporibus dignissimos. Dolore debitis esse nesciunt voluptatibus tempore adipisci eos illo, sint ab iure fugiat similique, repudiandae quidem aspernatur et qui enim cum ad. Officiis, doloremque quidem magnam at vero dolores perspiciatis odit deleniti repellat. Necessitatibus quae sed maiores totam amet quod consequuntur aut! Officiis et vero quasi vel dolores sequi at, autem nesciunt ex voluptatibus, animi consequuntur. Maxime, magni at eligendi ea reiciendis accusantium exercitationem deleniti explicabo alias velit. Laborum aut ipsam voluptate?",
+    "projectDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla reiciendis suscipit consequatur, dolorum qui error quas facilis incidunt ratione aliquid velit repudiandae dolores non ullam temporibus dignissimos",
     "imageUrl": "img1",
     "projectLink": "https://tu-dominio.com/p1"
   },
   {
     "id": 2,
     "projectName": "Proyecto 2",
-    "projectDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla reiciendis suscipit consequatur, dolorum qui error quas facilis incidunt ratione aliquid velit repudiandae dolores non ullam temporibus dignissimos. Dolore debitis esse nesciunt voluptatibus tempore adipisci eos illo, sint ab iure fugiat similique, repudiandae quidem aspernatur et qui enim cum ad. Officiis, doloremque quidem magnam at vero dolores perspiciatis odit deleniti repellat. Necessitatibus quae sed maiores totam amet quod consequuntur aut! Officiis et vero quasi vel dolores sequi at, autem nesciunt ex voluptatibus, animi consequuntur. Maxime, magni at eligendi ea reiciendis accusantium exercitationem deleniti explicabo alias velit. Laborum aut ipsam voluptate?",
+    "projectDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla reiciendis suscipit consequatur, dolorum qui error quas facilis incidunt ratione aliquid velit repudiandae dolores non ullam temporibus dignissimos",
     "imageUrl": "img2",
     "projectLink": "https://tu-dominio.com/p2"
+  },
+  {
+    "id": 3,
+    "projectName": "Proyecto 3",
+    "projectDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla reiciendis suscipit consequatur, dolorum qui error quas facilis incidunt ratione aliquid velit repudiandae dolores non ullam temporibus dignissimos",
+    "imageUrl": "img3",
+    "projectLink": "https://tu-dominio.com/p3"
   }
 ]

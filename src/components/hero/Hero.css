@@ -4,18 +4,50 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
 }
 
-.perroRobot {
-  max-height: 650px;
-  height: 90%;
+.heroBackground {
+  font-family: "Luxurious Script", cursive;
+  font-size: 40vw;
+  position: absolute;
+  top: -0.2em;
+  width: 100vw;
+  color: var(--violeta-oscuro);
+  z-index: -10;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
-h1 {
+
+.heroName {
   font-size: 5em;
-  font-weight: 400;
+  font-weight: 100;
+  font-family: "DM Serif Text", serif;
 }
 
 .subtitle {
   font-size: 1.2em;
   margin-top: 2rem;
+}
+
+.heroButtons {
+  font-size: 2em;
+  margin-top: 1rem;
+}
+
+i {
+  margin-right: 1rem;
+  color: var(--blanquito);
+}
+
+.heroImg {
+  width: 35%;
+  filter: drop-shadow(50px 50px 15px rgba(0, 0, 0, 0.4));
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%);
+  mask-image: linear-gradient(to top, transparent 0%, black 20%);
 }
