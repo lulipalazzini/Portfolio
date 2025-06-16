@@ -1,3 +1,8 @@
+.aboutMe {
+  padding-top: 5rem;
+  font-family: "Anonymous Pro", monospace;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -10,7 +15,6 @@ section {
   background-color: var(--violeta-medio);
   padding: 1.5rem;
   border-radius: 1rem;
-  font-family: sans-serif;
 }
 
 .sobre-mi {
@@ -26,24 +30,57 @@ section {
   margin-top: 1rem;
 }
 
+.cardsTitle {
+  font-family: "DM Serif Text", serif;
+  font-weight: 100;
+}
+
+.aboutMeParagraph {
+  line-height: 1.4rem;
+  margin-top: 1rem;
+}
+
 .tool-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   list-style: none;
   padding: 0;
   margin-top: 1rem;
 }
 
 .tool-grid li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  background-color: var(--violeta-negro);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border: none;
+  cursor: default;
 }
 
-.icono {
-  width: 20px;
-  height: 20px;
-  background-color: var(--blanquito);
-  border-radius: 2px;
+.tool-grid li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.certificationContainer {
+  margin-top: 1rem;
+}
+
+.certificationParagraph {
+  border: 1px black solid;
+  padding-block: 0.5em;
+  margin-block: 0.5em;
+  border-radius: 2rem;
+  text-align: center;
+  background: var(--violeta-negro);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.certificationParagraph:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }

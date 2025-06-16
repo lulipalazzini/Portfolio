@@ -4,7 +4,7 @@ nav {
   height: 4em;
 }
 
-ul {
+.navList {
   display: flex;
   align-items: center;
   justify-content: space-between;

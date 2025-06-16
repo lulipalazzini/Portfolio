@@ -6,48 +6,66 @@ const AboutMe = () => {
       <h1 className="title"># About me</h1>
       <div className="grid-container">
         <section className="sobre-mi">
-          <h2>Sobre mi</h2>
-          <p>Lorem ipsum dolor sit amet...</p>
+          <h2 className="cardsTitle">
+            <i className="bi bi-stars"></i>
+            Quién soy
+          </h2>
+          <p className="aboutMeParagraph">
+            Soy Lucía, una estudiante de programación, creativa, adaptativa y
+            comunicativa. Me gustan los desafíos y creo que siempre se trabaja
+            mejor en equipo. <br />
+            Tengo experiencia con tecnologías como{" "}
+            <b>React.js, Node.js, Python, SQL y WordPress</b>, además de un buen
+            dominio de <b>HTML y CSS</b>, lo que me permite adaptarme a
+            distintos tipos de proyectos tanto en frontend como backend. También
+            me desempeño como <b>tester QA manual</b>, lo que me permite tener
+            una mirada más amplia sobre la calidad del software. <br />
+            Tengo un buen nivel de inglés y estoy comprometida a mantenerme
+            actualizada con las tecnologías que se usen en el entorno laboral.{" "}
+            <br />
+            Me motiva seguir aprendiendo y crecer profesionalmente para
+            construir una carrera en el mundo IT.
+          </p>
         </section>
 
         <section className="herramientas">
-          <h2>Herramientas</h2>
+          <h2 className="cardsTitle">
+            <i className="bi bi-stars"></i>
+            Herramientas
+          </h2>
           <ul className="tool-grid">
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
-            <li>
-              <div className="icono"></div> Lorem ipsum
-            </li>
+            <li>React.js</li>
+            <li>JavaScript</li>
+            <li>Wordpress</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Firebase</li>
+            <li>Diseño de Bases de Datos</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Metodologías Ágiles</li>
+            <li>Scrum</li>
           </ul>
         </section>
 
         <section className="certificaciones">
-          <h2>Certificaciones</h2>
-          <p>Lorem ipsum dolor sit amet – Lorem ipsum</p>
-          <p>Lorem ipsum dolor sit amet – Lorem ipsum</p>
-          <p>Lorem ipsum dolor sit amet – Lorem ipsum</p>
+          <h2 className="cardsTitle">
+            <i className="bi bi-stars"></i>
+            Certificaciones
+          </h2>
+          <div className="certificationContainer">
+            <p className="certificationParagraph">
+              Desarrollo FrontEnd - CoderHouse
+            </p>
+            <p className="certificationParagraph">
+              Testing QA Manual - CoderHouse
+            </p>
+            <p className="certificationParagraph">
+              Oracle Next Education F2 T6 Back-end (Java) - Oracle
+            </p>
+          </div>
         </section>
       </div>
     </div>

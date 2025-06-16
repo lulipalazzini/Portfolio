@@ -3,7 +3,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav>
-      <ul>
+      <ul className="navList">
         <img
           src="../../../public/images/equis.png"
           alt="Logo"
