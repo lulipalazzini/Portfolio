@@ -27,7 +27,7 @@ const Projects = () => {
   ));
 
   return (
-    <div className="projects">
+    <div id="projects">
       <h1 className="title"># Works && Projects</h1>
       <div className="projectContainer">{renderProjectCards}</div>
     </div>

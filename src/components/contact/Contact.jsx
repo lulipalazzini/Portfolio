@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div id="contact">
       <h1 className="title"># Contact</h1>
       <div className="contactContainer">
         <form onSubmit={handleSubmit} className="contact-form">

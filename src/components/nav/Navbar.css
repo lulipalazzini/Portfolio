@@ -1,10 +1,16 @@
 nav {
-  background-color: rgba(251, 255, 241, 0.2);
-  padding: 0.5em 1em;
+  background-color: rgba(80, 54, 70, 0.5);
+  padding: 0.5em 2em;
   height: 4em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .navList {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +22,19 @@ nav {
   gap: 3em;
 }
 
+.navLinks li a {
+  text-decoration: none;
+  color: var(--blanquito);
+}
+
+.navLinks li a:hover {
+  text-decoration: underline;
+}
+
 .logo {
   max-height: 8vh;
+}
+
+.logo i {
+  font-size: 2rem;
 }

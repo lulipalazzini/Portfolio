@@ -4,15 +4,27 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="navList">
-        <img
+        <div className="logo">
+          <i className="bi bi-stars"></i>
+        </div>
+        {/* <img
           src="../../../public/images/equis.png"
           alt="Logo"
           className="logo"
-        />
+        /> */}
         <div className="navLinks">
-          <li>Opcion 1</li>
-          <li>Opcion 2</li>
-          <li>Opcion 3</li>
+          <li>
+            <a href="#hero">Inicio</a>
+          </li>
+          <li>
+            <a href="#projects">Proyectos</a>
+          </li>
+          <li>
+            <a href="#aboutMe">Sobre mi</a>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
+          </li>
         </div>
       </ul>
     </nav>
