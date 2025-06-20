@@ -1,17 +1,33 @@
+import { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav>
+    <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
       <ul className="navList">
         <div className="logo">
           <i className="bi bi-stars"></i>
         </div>
-        {/* <img
-          src="../../../public/images/equis.png"
-          alt="Logo"
-          className="logo"
-        /> */}
         <div className="navLinks">
           <li>
             <a href="#hero">Inicio</a>
@@ -20,7 +36,7 @@ const Navbar = () => {
             <a href="#projects">Proyectos</a>
           </li>
           <li>
-            <a href="#aboutMe">Sobre mi</a>
+            <a href="#aboutMe">Sobre mí</a>
           </li>
           <li>
             <a href="#contact">Contacto</a>

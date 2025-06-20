@@ -47,7 +47,7 @@ i {
 
 .heroImg {
   width: 30%;
-  filter: drop-shadow(50px 50px 15px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(30px 20px 15px rgba(0, 0, 0, 0.4));
   -webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%);
   mask-image: linear-gradient(to top, transparent 0%, black 20%);
 }

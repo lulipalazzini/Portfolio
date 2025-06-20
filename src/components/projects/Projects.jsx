@@ -9,8 +9,11 @@ const Projects = () => {
         alt={project.projectName}
         className="cardImage"
       />
-      <div>
+      <div className="cardContent">
         <h3 className="cardName">{project.projectName}</h3>
+        <p className="cardDesc">
+          <b>Stack:</b> {project.projectStack}
+        </p>
         <p className="cardDesc">{project.projectDescription}</p>
         <div className="cardLinkWrapper">
           <a
@@ -19,7 +22,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="cardLink"
           >
-            Ver proyecto <i className="bi bi-arrow-up-right"></i>
+            Ver proyecto en GitHub <i className="bi bi-arrow-up-right"></i>
           </a>
         </div>
       </div>

@@ -1,5 +1,6 @@
 #contact {
-  padding-top: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 .contactContainer {
@@ -19,6 +20,7 @@
 .contact-form textarea {
   width: 100%;
   background-color: var(--violeta-medio);
+  color: var(--blanquito);
   border: none;
   border-radius: 1.5rem;
   padding: 0.75rem 1rem;
@@ -66,4 +68,14 @@
   display: flex;
   align-items: center;
   gap: 0.3rem;
+}
+
+.custom-confirm-button {
+  background-color: #7d2e68 !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.6em 1.4em !important;
+  border-radius: 6px !important;
+  font-weight: bold;
+  cursor: pointer;
 }

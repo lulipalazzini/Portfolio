@@ -1,21 +1,53 @@
+import { useRef } from "react";
 import Swal from "sweetalert2";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
+  const form = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    Swal.fire({
-      title: "Enviado!",
-      text: "Pronto estaremos en contacto",
-      icon: "success",
-    });
+
+    emailjs
+      .sendForm(
+        "service_uqo224c",
+        "template_c90lbrf",
+        form.current,
+        "fEDo8mnL0VVYnWted"
+      )
+      .then(
+        (result) => {
+          Swal.fire({
+            title: "Enviado!",
+            text: "Pronto estaré en contacto",
+            icon: "success",
+            customClass: {
+              confirmButton: "custom-confirm-button",
+            },
+            buttonsStyling: false,
+          });
+          form.current.reset();
+        },
+        (error) => {
+          Swal.fire({
+            title: "Error",
+            text: "Ocurrió un problema. Intentá de nuevo.",
+            icon: "error",
+            customClass: {
+              confirmButton: "custom-confirm-button",
+            },
+            buttonsStyling: false,
+          });
+        }
+      );
   };
 
   return (
     <div id="contact">
       <h1 className="title"># Contact</h1>
       <div className="contactContainer">
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form ref={form} onSubmit={handleSubmit} className="contact-form">
           <label htmlFor="name">Nombre</label>
           <input
             type="text"

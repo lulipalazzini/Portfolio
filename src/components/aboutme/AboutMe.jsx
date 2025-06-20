@@ -39,8 +39,12 @@ const AboutMe = () => {
             <li>Wordpress</li>
             <li>Node.js</li>
             <li>Express</li>
+            <li>Sequelize</li>
+            <li>Postman</li>
+            <li>Bruno</li>
             <li>Python</li>
             <li>SQL</li>
+            <li>SQLite</li>
             <li>Firebase</li>
             <li>Diseño de Bases de Datos</li>
             <li>Git</li>

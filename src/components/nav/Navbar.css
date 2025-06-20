@@ -1,5 +1,5 @@
-nav {
-  background-color: rgba(80, 54, 70, 0.5);
+.navbar {
+  background-color: rgba(80, 54, 70, 0.9);
   padding: 0.5em 2em;
   height: 4em;
   position: fixed;
@@ -7,6 +7,15 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+.navbar.show {
+  transform: translateY(0);
 }
 
 .navList {

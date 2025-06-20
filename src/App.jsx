@@ -6,15 +6,17 @@ import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
 import AboutMe from "./components/aboutme/AboutMe";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <Projects></Projects>
-      <AboutMe></AboutMe>
-      <Contact></Contact>
+      <Navbar />
+      <Hero />
+      <Projects />
+      <AboutMe />
+      <Contact />
+      <Footer />
     </>
   );
 }
