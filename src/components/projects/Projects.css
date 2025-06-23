@@ -63,3 +63,19 @@
 .cardLink:hover {
   background-color: var(--violeta-negro);
 }
+
+@media (max-width: 768px) {
+  .projectContainer {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .title {
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+}

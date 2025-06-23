@@ -79,3 +79,25 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    margin: 2em 1em;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .contact-info p {
+    justify-content: center;
+  }
+}
