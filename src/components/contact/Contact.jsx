@@ -79,14 +79,19 @@ const Contact = () => {
         </form>
 
         <div className="contact-info">
+          <h3>Conectemos</h3>
           <p>
-            <i className="bi bi-link-45deg"></i> Email:{" "}
-            <a href="mailto:lulipalazzini4@gmail.com">
+            <i className="bi bi-envelope-fill"></i>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=lulipalazzini4@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               lulipalazzini4@gmail.com
             </a>
           </p>
           <p>
-            <i className="bi bi-link-45deg"></i> Linkedin:{" "}
+            <i className="bi bi-linkedin"></i>
             <a
               href="https://www.linkedin.com/in/lucia-palazzini"
               target="_blank"
@@ -96,9 +101,9 @@ const Contact = () => {
             </a>
           </p>
           <p>
-            <i className="bi bi-link-45deg"></i> GitHub:{" "}
+            <i className="bi bi-github"></i>
             <a
-              href="https://github.com/luciapalazzini"
+              href="https://github.com/lulipalazzini"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,8 +1,31 @@
+import { useEffect, useRef } from "react";
 import "./AboutMe.css";
 
 const AboutMe = () => {
+  const aboutMeRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const sections = aboutMeRef.current.querySelectorAll("section");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
   return (
-    <div id="aboutMe">
+    <div id="aboutMe" ref={aboutMeRef}>
       <h1 className="title"># About me</h1>
       <div className="grid-container">
         <section className="sobre-mi">
@@ -37,6 +60,7 @@ const AboutMe = () => {
             <li>React.js</li>
             <li>JavaScript</li>
             <li>Wordpress</li>
+            <li>.NET</li>
             <li>Node.js</li>
             <li>Express</li>
             <li>Sequelize</li>
@@ -45,12 +69,16 @@ const AboutMe = () => {
             <li>Python</li>
             <li>SQL</li>
             <li>SQLite</li>
+            <li>SQL Server</li>
             <li>Firebase</li>
             <li>Diseño de Bases de Datos</li>
             <li>Git</li>
             <li>GitHub</li>
+            <li>Figma</li>
             <li>Metodologías Ágiles</li>
             <li>Scrum</li>
+            <li>Kanban</li>
+            <li>Jira</li>
           </ul>
         </section>
 

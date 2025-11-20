@@ -6,6 +6,48 @@
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Carousel flotante */
+.floating-carousel {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 45%;
+  background-color: rgba(125, 46, 104, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  overflow: hidden;
+  z-index: 10;
+  animation: slideUp 1s ease-out 1s both;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.carousel-item {
+  color: var(--blanquito);
+  font-size: 1.1em;
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .heroBackground {
@@ -28,21 +70,30 @@
   font-size: 5em;
   font-weight: 100;
   font-family: "DM Serif Text", serif;
+  animation: slideInLeft 0.8s ease-out 0.3s both;
 }
 
 .subtitle {
   font-size: 1.2em;
   margin-top: 2rem;
+  animation: slideInLeft 0.8s ease-out 0.5s both;
 }
 
 .heroButtons {
   font-size: 2em;
   margin-top: 1rem;
+  animation: slideInLeft 0.8s ease-out 0.7s both;
 }
 
 i {
   margin-right: 1rem;
   color: var(--blanquito);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+i:hover {
+  transform: scale(1.2);
+  color: var(--violeta-claro);
 }
 
 .heroImg {
@@ -50,6 +101,12 @@ i {
   filter: drop-shadow(30px 20px 15px rgba(0, 0, 0, 0.4));
   -webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%);
   mask-image: linear-gradient(to top, transparent 0%, black 20%);
+  animation: slideInRight 1s ease-out 0.5s both;
+  transition: transform 0.3s ease;
+}
+
+.heroImg:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -58,6 +115,17 @@ i {
     justify-content: center;
     padding-top: 2rem;
     gap: 2rem;
+  }
+
+  .floating-carousel {
+    bottom: 8%;
+    left: 5%;
+    width: 90%;
+    padding: 1rem 1.2rem;
+  }
+
+  .carousel-item {
+    font-size: 0.9em;
   }
 
   .heroBackground {

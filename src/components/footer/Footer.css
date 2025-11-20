@@ -1,11 +1,15 @@
 footer {
-  background-color: rgba(80, 54, 70, 0.9);
+  background-color: rgba(80, 54, 70, 0.7);
+  backdrop-filter: blur(10px);
   height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideUp 0.8s ease-out;
 }
 
 .footerText {
   color: var(--blanquito);
+  animation: fadeIn 1s ease-out 0.3s both;
 }

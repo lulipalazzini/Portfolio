@@ -2,18 +2,16 @@ import "./Projects.css";
 import projects from "../../data/projects.json";
 
 const Projects = () => {
-  const renderProjectCards = projects.map((project) => (
-    <div key={project.id} className="card">
-      <img
-        src={project.imageUrl}
-        alt={project.projectName}
-        className="cardImage"
-      />
+  const renderProjectCards = projects.map((project, index) => (
+    <div
+      key={project.id}
+      className="card"
+      style={{ animationDelay: `${index * 0.2}s` }}
+    >
       <div className="cardContent">
+        <p className="projectNumber">0{index + 1}</p>
         <h3 className="cardName">{project.projectName}</h3>
-        <p className="cardDesc">
-          <b>Stack:</b> {project.projectStack}
-        </p>
+        <p className="cardStack">{project.projectStack}</p>
         <p className="cardDesc">{project.projectDescription}</p>
         <div className="cardLinkWrapper">
           <a
@@ -25,6 +23,13 @@ const Projects = () => {
             Ver proyecto en GitHub <i className="bi bi-arrow-up-right"></i>
           </a>
         </div>
+      </div>
+      <div className="cardImageWrapper">
+        <img
+          src={project.imageUrl}
+          alt={project.projectName}
+          className="cardImage"
+        />
       </div>
     </div>
   ));
