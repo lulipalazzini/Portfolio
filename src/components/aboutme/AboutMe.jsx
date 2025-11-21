@@ -34,16 +34,18 @@ const AboutMe = () => {
             Quién soy
           </h2>
           <p className="aboutMeParagraph">
-            Soy Lucía, una estudiante de programación, creativa, adaptativa y
-            comunicativa. Me gustan los desafíos y creo que siempre se trabaja
-            mejor en equipo. <br />
+            Soy Lucía, <b>Técnica Universitaria en Programación</b> y{" "}
+            <b>desarrolladora Full Stack</b>. Me considero una persona,
+            creativa, adaptativa y comunicativa. Me gustan los desafíos y creo
+            que siempre se trabaja mejor en equipo. <br />
             Tengo experiencia con tecnologías como{" "}
-            <b>React.js, Node.js, Python, SQL y WordPress</b>, además de un buen
-            dominio de <b>HTML y CSS</b>, lo que me permite adaptarme a
-            distintos tipos de proyectos tanto en frontend como backend. También
-            me desempeño como <b>tester QA manual</b>, lo que me permite tener
-            una mirada más amplia sobre la calidad del software. <br />
-            Tengo un buen nivel de inglés y estoy comprometida a mantenerme
+            <b>React.js, Node.js, C#, Python, SQL y WordPress</b>, además de un
+            buen dominio de <b>HTML y CSS</b>, lo que me permite adaptarme a
+            distintos tipos de proyectos tanto en frontend como backend. <br />{" "}
+            También cuento con experiencia como <b>tester QA manual</b>, lo que
+            me brinda una visión más completa sobre la calidad del software y
+            los procesos de validación. <br />
+            Poseo un buen nivel de inglés y estoy comprometida a mantenerme
             actualizada con las tecnologías que se usen en el entorno laboral.{" "}
             <br />
             Me motiva seguir aprendiendo y crecer profesionalmente para

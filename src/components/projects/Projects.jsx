@@ -14,14 +14,46 @@ const Projects = () => {
         <p className="cardStack">{project.projectStack}</p>
         <p className="cardDesc">{project.projectDescription}</p>
         <div className="cardLinkWrapper">
-          <a
-            href={project.projectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cardLink"
-          >
-            Ver proyecto en GitHub <i className="bi bi-arrow-up-right"></i>
-          </a>
+          {project.projectLink && (
+            <a
+              href={project.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cardLink"
+            >
+              <i className="bi bi-github"></i> GitHub
+            </a>
+          )}
+          {project.projectLinkFront && (
+            <a
+              href={project.projectLinkFront}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cardLink"
+            >
+              <i className="bi bi-code-slash"></i> GitHub Front
+            </a>
+          )}
+          {project.projectLinkBack && (
+            <a
+              href={project.projectLinkBack}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cardLink"
+            >
+              <i className="bi bi-server"></i> GitHub Back
+            </a>
+          )}
+          {project.projectLinkWeb && (
+            <a
+              href={project.projectLinkWeb}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cardLink cardLink-web"
+            >
+              <i className="bi bi-globe"></i> Ver Web
+            </a>
+          )}
         </div>
       </div>
       <div className="cardImageWrapper">

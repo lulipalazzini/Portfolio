@@ -9,12 +9,12 @@ const Hero = () => {
       {/* Carousel flotante */}
       <div className="floating-carousel">
         <div className="carousel-track">
-          <span className="carousel-item">Estudiando React Native</span>
+          <span className="carousel-item">Estudiando Docker</span>
           <span className="carousel-item">
             Explorando el mundo del Project Management
           </span>
           <span className="carousel-item">Aprendiendo TypeScript</span>
-          <span className="carousel-item">Estudiando React Native</span>
+          <span className="carousel-item">Estudiando Docker</span>
           <span className="carousel-item">
             Explorando el mundo del Project Management
           </span>
@@ -28,7 +28,7 @@ const Hero = () => {
           &nbsp;&nbsp;&nbsp;Palazzini
         </h1>
         <p className="subtitle">
-          FrontEnd Developer && <br />
+          FullStack Developer && <br />
           QA Tester
         </p>
         <div className="heroButtons">

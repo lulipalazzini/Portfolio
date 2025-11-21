@@ -118,11 +118,15 @@
 .cardLinkWrapper {
   display: flex;
   align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
+
 .cardLink {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
   background-color: rgba(125, 46, 104, 0.8);
   color: var(--blanquito);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -130,12 +134,29 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 0.95em;
+  font-weight: 500;
 }
+
+.cardLink i {
+  font-size: 1.1em;
+  margin-right: 0;
+}
+
 .cardLink:hover {
   background-color: rgba(45, 20, 37, 1);
-  transform: scale(1.05);
+  transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cardLink-web {
+  background-color: rgba(156, 84, 128, 0.9);
+}
+
+.cardLink-web:hover {
+  background-color: var(--violeta-claro);
+  color: var(--violeta-negro);
 }
 
 @media (max-width: 968px) {
